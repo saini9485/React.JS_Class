@@ -4,3 +4,23 @@ h1{
 h2{
   color: aqua;
 }
+h1{
+ text-align: center;
+}
+.para{
+  border: 2px solid blue;
+  font-size: larger;
+  text-align: center;
+  background-color: aqua;
+  width: 50%;
+  display: flex;
+  margin-left: 26%;
+  display: block;
+}
+.Submit{
+  color: antiquewhite;
+  background-color: red;
+  border-radius: 10px;
+  display: flex;
+  margin-left: 50%;
+}
