@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { Child } from "./Child";
+import { WelcomeClass } from "./componets/WelcomeClass";
 
 export class WelcomeClass extends Component {
   render() {
     console.log(this.props);
     const { name, age, gender, place } = this.props;
-    // this.props.name = "vasanth";  // Props are read only data
+    // this.props.name = "Rajesh";  // Props are read only data
     return (
       <div>
         <Child />

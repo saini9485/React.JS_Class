@@ -1,29 +1,20 @@
 import "./App.css";
-import { Component1 } from "./components/Component1";
 //import { Component1 } from "./components/Component1";
-//import {WelcomeClass} from "./components/WelcomeClass";
-//import { Toggle } from "./components/Toggle.js";
-//import { Welcomefn } from "./components/Welcomefn";
- //import {Welcomefn} from "./components/Welcomefn"
- //import { Todo--app } from './components/Todo-app'
+import { Button } from "./components/Button";
 function App() {
   return (
     <div>
-      <Component1 />
-        {/* <Toggle /> */}
-      {/* <Component1></Component1> */}
-      {/* <Welcomefn></Welcomefn> */}
-
-      {/* <WelcomeClass
-        name="Virendra"
-        age="20"
-        place="lucknow"
-        gender="male"
-      // /> */}
-      {/* // <section>
-       <h1>hello</h1>
-       <h2>This is my First React Class i am haapy</h2>
-       </section> */}
+      <button />
+      <h1>Title: History of React</h1>
+      <p>
+        React was created by <b>Jordan Walke</b>, a software engineer at Facebook, who
+        released an early prototype of React called "FaxJS". He was influenced
+        by XHP, an HTML component library for PHP. It was first deployed on
+        Facebook's News Feed in 2011 and later on Instagram in 2012. It was
+        open-sourced at JSConf US in May 2013.
+      </p>
+      <Button text="Delete" class="delete" />
+      <Button text="Save" class="save" />
     </div>
   );
 }
