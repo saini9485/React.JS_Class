@@ -3,8 +3,9 @@ import "./App.css";
 import { Button } from "./components/Button";
 function App() {
   return (
-    <div>
+    <div className="main-div">
       <button />
+      
       <h1>Title: History of React</h1>
       <p>
         React was created by <b>Jordan Walke</b>, a software engineer at Facebook, who
@@ -13,8 +14,10 @@ function App() {
         Facebook's News Feed in 2011 and later on Instagram in 2012. It was
         open-sourced at JSConf US in May 2013.
       </p>
+      <aside className="btn">
       <Button text="Delete" class="delete" />
       <Button text="Save" class="save" />
+      </aside>
     </div>
   );
 }
