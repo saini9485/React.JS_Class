@@ -1,9 +1,9 @@
 import React, { Component } from "react"; 
-export class Component1 extends Component {
+export class Footer extends Component {
   render() {
     return (
       <div>
-        <h1> This is component Rajesh</h1>
+        <h2> This is Footer</h2>
       </div> 
     );
   }

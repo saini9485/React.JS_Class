@@ -58,3 +58,12 @@ p{
   display: flex;
   justify-content: center;
 }
+h1{
+  text-align: center;
+  background-color: blue;
+}
+h2{
+  text-align: center;
+  background-color: black;
+  color: white;
+}
