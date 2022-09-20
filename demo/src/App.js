@@ -2,7 +2,7 @@ import "./App.css";
 // import { Component1 } from "./components/Component1";
 //  import { Button } from "./components/Button";
 import { Counter } from "./components/Counter";
-// import {Header} from "./components/Header"
+// import {Header} from "./components/Header"     
 // import {Content} from "./components/Content"
 //  import {Footer} from "./components/Footer"
 

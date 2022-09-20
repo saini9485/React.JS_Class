@@ -58,12 +58,34 @@ p{
   display: flex;
   justify-content: center;
 }
+
+
+/* This CSS For Counter */
 h1{
   text-align: center;
   background-color: blue;
+  border: 2px solid lawngreen;
+  border-radius: 10px;
+  width: 35%;
+  color: white;
 }
 h2{
   text-align: center;
   background-color: black;
   color: white;
+}
+.add{
+border: 2px solid blue;
+width: 100px;
+height: 30px;
+}
+.Sub{
+border: 2px solid lightcoral;
+width: 100px;
+height: 30px;
+}
+button{
+  margin: 10px;
+  font-size: larger;
+  cursor: pointer;
 }
