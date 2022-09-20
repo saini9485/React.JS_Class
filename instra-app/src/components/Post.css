@@ -1,73 +1,80 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
 .container {
-  height: 430px;
-  width: 400px;
-  margin: 10px;
-  padding: 10px;
-  background-color: #fafafa;
-  box-shadow: 0 0 4px #6d6d6d;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  margin-top: 10px;
-  border-radius: 10px;
-}
+    height: 450px;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fafafa;
+    box-shadow: 0 0 4px #6d6d6d;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+  
+  .user_Profile {
+    display: flex;
+    align-items: center;
+     gap: 0.5rem; 
+    margin-bottom: 5px; 
+  }
+  .user_profile_image {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+  }
+  .user_Profile h4 {
+    text-transform: capitalize;
+  }
+  .fa-ellipsis{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 50%;
+  
+  }
+  
+  .post_Images img {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+  }
+  
+  .post-button_area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .post-button_area button {
+    display: flex;
+    flex-direction: row;
+    display: inline;
+    margin: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .post_comment{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .post_time{
+    font-size:small;
+  }
+  .comment_area {
+    height: 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+  
+  }
 
-.user_Profile {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 5px;
-}
-.user_profile_image {
-  height: 50px;
-  width: 50px;
-  border-radius: 25px;
-}
-.user_Profile h4 {
-  text-transform: capitalize;
-}
-.fa-ellipsis{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-left: 50%;
-
-}
-
-.post_Images img {
-  height: 250px;
-  width: 400px;
-  object-fit: cover;
-}
-
-.post-button_area {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.post-button_area button {
-  display: flex;
-  flex-direction: row;
-  display: inline;
-  margin: 10px;
-  border: none;
-  background-color: transparent;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-.post_comment{
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.post_time{
-  font-size:small;
-}
-.comment_area {
-  height: 30px;
-  width: 100%;
-  border: none;
-  outline: none;
-}
+  

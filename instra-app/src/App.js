@@ -7,9 +7,6 @@ function App() {
     <> 
     <Posts />
     <Posts />
-    <Posts />
-    <Posts />
-    <Posts />
     {/* <Buttons /> */}
     </>
   );
