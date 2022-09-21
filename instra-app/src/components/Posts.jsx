@@ -10,7 +10,7 @@ export class Posts extends Component {
         {
           postId: 1,
           userName: "Rajesh Saini",
-          postImageURL: "/Asset/photo2.jpg",
+          postImageURL: "/Assets/photo.jpg",
           likes: "2",
           Comment: "Nice pic",
           location: "UP India",
@@ -19,7 +19,7 @@ export class Posts extends Component {
         {
           postId: 4,
           userName: "Govind ",
-          postImageURL: "/Asset/photo2.jpg",
+          postImageURL: "/Assets/photo.jpg",
           timeStamp: "6.00PM",
           likes: "23",
           Comment: "Nice pic",
@@ -29,7 +29,7 @@ export class Posts extends Component {
         {
           postId: 5,
           userName: "Virendra ",
-          postImageURL: "/Assets/photo4.jpg",
+          postImageURL: "/Assets/photo.jpg",
           timeStamp: "6.00PM",
           likes: "20",
           Comment: "Nice pic",
@@ -39,7 +39,7 @@ export class Posts extends Component {
         {
           postId: 6,
           userName: "Riyaj ",
-          postImageURL: "./Assets/photo.jpg",
+          postImageURL: "/Assets/photo.jpg",
           timeStamp: "6.00PM",
           likes: "25",
           Comment: "Nice pic",
@@ -49,7 +49,7 @@ export class Posts extends Component {
         {
           postId: 7,
           userName: "Prakash Kumar",
-          postImageURL: "./Assets/photo2.jpg",
+          postImageURL: "/Assets/photo.jpg",
           timeStamp: "6.00PM",
           likes: "30",
           Comment: "Nice pic",
@@ -79,17 +79,19 @@ export class Posts extends Component {
                 <img src={item.postImageURL} alt="" />
               </div>
               <Buttons />
+              <div className="like_icons">
               <h5> {item.likes} likes</h5>
               <div className="post_comment">
                 <h5>{item.userName} </h5>
                 <p>{item.Comment}</p>
               </div>
               <p className="post_time">{item.time}</p>
+              </div>
               <div className="add-comment">
-                <input
-                  type="text"
+                <input 
+                  type="text" 
                   className="comment_area"
-                  placeholder="  Add a Comment..."
+                  placeholder=" 😒 Add a Comment... "
                 ></input>
               </div>
             </div>
