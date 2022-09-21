@@ -1,5 +1,5 @@
 <h1>OutPut Instra_Feed</h1>
-<img src="output.png">
+<img src="output.png" alt ="putput">
 
 # Getting Started with Create React App
 

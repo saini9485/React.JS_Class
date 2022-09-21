@@ -13,6 +13,7 @@
     /* box-shadow: 0 0 4px #6d6d6d; */
     align-items: center;
     max-width: 600px;
+    min-width: 300px;
     margin: 0 auto;
     margin-top: 10px;
     border-radius: 10px;
@@ -22,7 +23,7 @@
   .user_Profile {
     display: flex;
     align-items: center;
-     gap: 0.5rem; 
+     gap: 1rem; 
     margin-bottom: 5px; 
   }
   .user_profile_image {
