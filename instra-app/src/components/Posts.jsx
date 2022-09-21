@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Buttons } from "./Buttons";
 //import photo1 from "./Assets/photo1.jpg"
 import "./Post.css";
-export class Posts extends Component {
+export class Posts extends Component { 
   constructor(props) {
     super(props);
     this.state = {
@@ -10,8 +10,7 @@ export class Posts extends Component {
         {
           postId: 1,
           userName: "Rajesh Saini",
-          postImageURL: "./Assets/photo1.jpg",
-          timeStamp: "6.00PM",
+          postImageURL: "/Asset/photo2.jpg",
           likes: "2",
           Comment: "Nice pic",
           location: "UP India",
@@ -19,8 +18,8 @@ export class Posts extends Component {
         },
         {
           postId: 4,
-          userName: "Govind Verma",
-          postImageURL: "./Assets/photo2.jpg",
+          userName: "Govind ",
+          postImageURL: "/Asset/photo2.jpg",
           timeStamp: "6.00PM",
           likes: "23",
           Comment: "Nice pic",
@@ -29,8 +28,8 @@ export class Posts extends Component {
         },
         {
           postId: 5,
-          userName: "Virendra Verma",
-          postImageURL: "./Assets/photo4.jpg",
+          userName: "Virendra ",
+          postImageURL: "/Assets/photo4.jpg",
           timeStamp: "6.00PM",
           likes: "20",
           Comment: "Nice pic",
@@ -67,10 +66,14 @@ export class Posts extends Component {
           return (
             <div className="container">
               <div className="user_Profile">
-                <img className="user_profile_image" src={item.postImageURL} alt="" />
-                <h3 >{item.userName}</h3>
+                <img
+                  className="user_profile_image"
+                  src={item.postImageURL} 
+                  alt=""
+                />
+                <h3>{item.userName}</h3>
                 {/* <p>{item.location}</p> */}
-                <i class="fa-solid fa-ellipsis"></i>
+                <i className="fa-solid fa-ellipsis"></i>
               </div>
               <div className="post_Images">
                 <img src={item.postImageURL} alt="" />
