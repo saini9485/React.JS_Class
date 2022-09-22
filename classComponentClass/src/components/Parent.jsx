@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { PureComp } from "./PureComp";
-import { RegularComp } from "./RegularComp";
+//import { PureComp } from "./PureComp";
+//import { RegularComp } from "./RegularComp";
 
 export class Parent extends Component {
   constructor(props) {
