@@ -1,9 +1,9 @@
 import './App.css';
-import {LoginPage} from "./componets/LoginForm/LoginPage";
+import CountHooks from './componets/CountHooks'
 function App() {
   return (
   <div>
-<LoginPage/>
+    <CountHooks />
   </div>
   );
 }
