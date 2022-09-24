@@ -5,7 +5,10 @@ export default function CountHooks() {
     <div>
 
 <h1>Count:-{count}</h1>
-<button onClick={()=>setCount(count+3)}>Increament</button>
+<button onClick={()=>setCount(count+1)}>Increament</button>
     </div>
-  )
+  ) 
 }
+
+ 
+

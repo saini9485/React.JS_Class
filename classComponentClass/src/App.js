@@ -1,11 +1,11 @@
 import "./App.css";
 // import { Component1 } from "./components/Component1";
 //  import { Button } from "./components/Button";
-//import { Counter } from "./components/Counter";
+import { Counter } from "./components/Counter";
 // import {Header} from "./components/Header"     
 // import {Content} from "./components/Content"
 //  import {Footer} from "./components/Footer"
- import { Parent } from "./components/Parent";
+ //import { Parent } from "./components/Parent";
 
 function App() {
   return(
@@ -18,9 +18,9 @@ function App() {
       <Content content ={4}/>
       <Content content ={5}/>
       <Footer /> */}
-      {/* <Counter /> */}
+      { <Counter /> }
 
-      <Parent />
+      {/* <Parent /> */}
     </div>
     
   );
