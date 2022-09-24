@@ -1,5 +1,5 @@
 import './App.css';
-import CountHooks from './componets/CountHooks'
+import {CountHooks} from './componets/CounterApp/CountHooks'
 function App() {
   return (
   <div>
