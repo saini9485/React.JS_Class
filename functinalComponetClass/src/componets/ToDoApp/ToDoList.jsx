@@ -17,8 +17,8 @@ export const ToDoList = () => {
   }
 
   return (
-    <>
-    
+    <div className="todoMain">
+<div className="Container">
     <h1>To-Do List</h1>
       <input
         type="text"
@@ -26,38 +26,32 @@ export const ToDoList = () => {
         placeholder={"Add To-Do"}
         onChange={(e) => setToDo(e.target.value)}
       />
-      <button onClick={addItem}>Add item</button>
+      <button onClick={addItem} className="AddBtn">Add item</button>
       {items.map((item) => (
          <div>
         
           <span>{item}</span>
-          <button  >Edit item</button>
-          <button
+          <button className="EditBtn" >Edit item</button>
+          <button className="DeleteBtn"
             onClick={() => {
               let filteredItems = items.filter((value) => value !== item);
               setItems([...filteredItems]);
             }}
           >
             delete
-          </button>
-          
+          </button> 
         </div> 
       ))}
-    </>
+    </div>
+    </div>
   );
 };
 
 // import { useEffect, useState } from "react";
 
 // export  function ToDoList () {
-//   const [todos, setTodos] = useState(() => {
-//     const savedTodos = localStorage.getItem("todos");
-//     if (savedTodos) {
-//       return JSON.parse(savedTodos);
-//     } else {
-//       return [];
-//     }
-//   });
+//   const [todos, setTodos] = useState() 
+//    
 //   const [todo, setTodo] = useState("");
 //   // boolean state to know if we are editing (this will let us display
 //   // different inputs based on a condition (conditional rendering)
