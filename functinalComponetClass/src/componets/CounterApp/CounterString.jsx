@@ -1,3 +1,4 @@
+//CounterString with useState
 import React, { useState } from "react";
 export function CounterString() {
   const [name, setName] = useState("Rajesh");
