@@ -2,40 +2,39 @@
 import React, { useState } from "react";
 import "./ToDoList.css"
 export const ToDoList = () => {
-  const [items, setItems] = useState([]);
-  const [toDo, setToDo] = useState("");
+  const [toDo, settoDo] = useState([]);
+  const [toDos, setToDoss] = useState("");
 
   const addItem = () => {
-    setItems([...items, toDo]);
-    setToDo("");
+    settoDo([...toDo, toDos]);
+    setToDoss("");
   };
 
-
   function handleEditInputChange(e) {
-    setItems({ ...setItems, text: e.target.value });
-    console.log(items);
+    settoDo({ ...settoDo, text: e.target.value });
+    console.log(toDo);
   }
 
   return (
-    <div className="todoMain">
+    <div className="toDosMain">
 <div className="Container">
     <h1>To-Do List</h1>
       <input
         type="text"
-        value={toDo.text}
+        value={toDos.text}
         placeholder={"Add To-Do"}
-        onChange={(e) => setToDo(e.target.value)}
+        onChange={(e) => setToDoss(e.target.value)}
       />
-      <button onClick={addItem} className="AddBtn">Add item</button>
-      {items.map((item) => (
+      <button onClick={addItem} className="AddBtn">Add ToDo</button>
+      {toDo.map((item) => (
          <div>
         
           <span>{item}</span>
-          <button className="EditBtn" >Edit item</button>
+          <button className="EditBtn" >Edit ToDo</button>
           <button className="DeleteBtn"
             onClick={() => {
-              let filteredItems = items.filter((value) => value !== item);
-              setItems([...filteredItems]);
+              let filteredtoDo = toDo.filter((value) => value !== item);
+              settoDo([...filteredtoDo]);
             }}
           >
             delete
@@ -50,9 +49,9 @@ export const ToDoList = () => {
 // import { useEffect, useState } from "react";
 
 // export  function ToDoList () {
-//   const [todos, setTodos] = useState() 
+//   const [todos, setToDosss] = useState() 
 //    
-//   const [todo, setTodo] = useState("");
+//   const [todo, setToDoss] = useState("");
 //   // boolean state to know if we are editing (this will let us display
 //   // different inputs based on a condition (conditional rendering)
 //   const [isEditing, setIsEditing] = useState(false);
@@ -64,7 +63,7 @@ export const ToDoList = () => {
 //   }, [todos]);
 
 //   function handleInputChange(e) {
-//     setTodo(e.target.value);
+//     setToDoss(e.target.value);
 //   }
 
 //   // function to get the value of the edit input and set the new state
@@ -78,7 +77,7 @@ export const ToDoList = () => {
 //     e.preventDefault();
 
 //     if (todo !== "") {
-//       setTodos([
+//       setToDoss([
 //         ...todos,
 //         {
 //           id: todos.length + 1,
@@ -87,7 +86,7 @@ export const ToDoList = () => {
 //       ]);
 //     }
 
-//     setTodo("");
+//     setToDos("");
 //   }
 
 //   function handleEditFormSubmit(e) {
@@ -100,7 +99,7 @@ export const ToDoList = () => {
 //     const removeItem = todos.filter((todo) => {
 //       return todo.id !== id;
 //     });
-//     setTodos(removeItem);
+//     setToDoss(removeItem);
 //   }
 
 //   // function to edit a todo item
@@ -114,7 +113,7 @@ export const ToDoList = () => {
 //     // set editing to false because this function will be used inside a onSubmit function - which means the data was submited and we are no longer editing
 //     setIsEditing(false);
 //     // update the todos state with the updated todo
-//     setTodos(updatedItem);
+//     setToDoss(updatedItem);
 //   }
 
 //   // function to handle when the "Edit" button is clicked
