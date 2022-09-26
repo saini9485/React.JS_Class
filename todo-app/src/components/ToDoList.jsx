@@ -1,23 +1,19 @@
 import React, { useState } from "react";
-export const ToDo = () => {
- // const [items, setItems] = useState([]);
-//    const [toDo, setToDo] = useState("");
+export const ToDoList = () => {
+  const [items, setItems] = useState([]);
+  const [toDo, setToDo] = useState("");
 
-//   const addItem = () => {
-//     setItems([...items, toDo]);
-//     setToDo("");
-//   };
-//   function handleEditInputChange(e) {
-//     setItems({ ...setItems, text: e.target.value });
-//     console.log(items);
-//   }
+  const addItem = () => {
+    setItems([...items, toDo]);
+    setToDo("");
+  };
 
   return (
     <>
     <h1>To-Do List</h1>
-      {/* <input
+      <input
         type="text"
-        value={toDo}
+        value={toDo.text}
         placeholder={"Add To-Do"}
         onChange={(e) => setToDo(e.target.value)}
       />
@@ -26,7 +22,6 @@ export const ToDo = () => {
          <div>
         
           <span>{item}</span>
-          <button  >Edit item</button>
           <button
             onClick={() => {
               let filteredItems = items.filter((value) => value !== item);
@@ -35,8 +30,9 @@ export const ToDo = () => {
           >
             delete
           </button>
+          
         </div> 
-      ))} */}
+      ))}
     </>
   );
 };
