@@ -1,3 +1,7 @@
-h1{
-  background-color: blue;
+h1,h2,h3{
+  text-align: center;
+}
+input[type="text"] {
+  display: block;
+  margin : 0 auto;
 }
