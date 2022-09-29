@@ -1,6 +1,7 @@
 //import { UseRef } from './componets/UseRef';
 import './App.css';
-import { Parent } from './componets/UseContext/Parent';
+import { Parent } from './componets/ContextApi/Parent';
+//import { Parent } from './componets/UseContext/Parent';
 //import { CounterApp } from './componets/CounterApp/Counter';
 //import {CounterString} from "./componets/CounterApp/CounterString"
 //import { ToDoList } from './componets/ToDoApp/ToDoList';
@@ -19,7 +20,8 @@ function App() {
     {/* < CounterApp /> */}
     {/* < CounterString /> */}
     {/* <UseRef /> */}
-   <Parent />
+   {/* <Parent /> */}
+   <Parent/>
   </div>
   );
 }

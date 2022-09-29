@@ -10,7 +10,7 @@ export function Parent() {
   const age = 20;
   return (
     <div>
-      <h1>UseContext</h1>
+      <h1>Parent</h1>
       < Child1 />
        <Child2 />
       <data.Provider value={name}>
