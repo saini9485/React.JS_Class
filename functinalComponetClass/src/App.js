@@ -1,5 +1,6 @@
-import { UseRef } from './componets/UseRef';
+//import { UseRef } from './componets/UseRef';
 import './App.css';
+import { Parent } from './componets/UseContext/Parent';
 //import { CounterApp } from './componets/CounterApp/Counter';
 //import {CounterString} from "./componets/CounterApp/CounterString"
 //import { ToDoList } from './componets/ToDoApp/ToDoList';
@@ -17,7 +18,8 @@ function App() {
     {/* <ChangeTitleHook /> */}
     {/* < CounterApp /> */}
     {/* < CounterString /> */}
-    <UseRef />
+    {/* <UseRef /> */}
+   <Parent />
   </div>
   );
 }
