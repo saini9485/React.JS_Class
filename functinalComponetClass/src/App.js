@@ -1,6 +1,7 @@
 //import { UseRef } from './componets/UseRef';
 import './App.css';
-import { Parent } from './componets/ContextApi/Parent';
+import { ReducerCounter } from './componets/ReducerHook/ReducerCounter';
+//import { Parent } from './componets/ContextApi/Parent';
 //import { Parent } from './componets/UseContext/Parent';
 //import { CounterApp } from './componets/CounterApp/Counter';
 //import {CounterString} from "./componets/CounterApp/CounterString"
@@ -21,7 +22,8 @@ function App() {
     {/* < CounterString /> */}
     {/* <UseRef /> */}
    {/* <Parent /> */}
-   <Parent/>
+   {/* <Parent/> */}
+   <ReducerCounter/>
   </div>
   );
 }
