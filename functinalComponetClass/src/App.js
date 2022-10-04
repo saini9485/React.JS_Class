@@ -1,6 +1,7 @@
 //import { UseRef } from './componets/UseRef';
 import './App.css';
-import { ReducerCounter } from './componets/ReducerHook/ReducerCounter';
+import { ReducerCounter } from './componets/ReducerHook/ReducerWithObject';
+//import { ReducerCounter } from './componets/ReducerHook/ReducerCounter';
 //import { Parent } from './componets/ContextApi/Parent';
 //import { Parent } from './componets/UseContext/Parent';
 //import { CounterApp } from './componets/CounterApp/Counter';
@@ -10,6 +11,7 @@ import { ReducerCounter } from './componets/ReducerHook/ReducerCounter';
 //import {CountHooks} from './componets/CounterApp/CountHooks'
 //import { StateWithArray } from './componets/StateWithArray';
 //import {ChangeTitleHook} from "./componets/ChangeTitleHook"
+//import {UseReducer} from "./componets/ReducerHook/ReducerCounter"
 function App() {
   return (
   <div>
@@ -23,6 +25,8 @@ function App() {
     {/* <UseRef /> */}
    {/* <Parent /> */}
    {/* <Parent/> */}
+   {/* <ReducerCounter/> */}
+   {/* <UseReducer/> */}
    <ReducerCounter/>
   </div>
   );

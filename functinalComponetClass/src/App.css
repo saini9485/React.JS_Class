@@ -5,3 +5,11 @@ input[type="text"] {
   display: block;
   margin : 0 auto;
 }
+.btn {
+    text-align: center;  
+    border: 7px solid rgb(34, 0, 255);  
+    width: 300px;  
+    height: 200px;  
+    padding-top: 100px; 
+      margin: 0 auto;
+}
