@@ -1,6 +1,7 @@
 //import { UseRef } from './componets/UseRef';
 import './App.css';
-import { ReducerCounter } from './componets/ReducerHook/ReducerWithObject';
+import { MemoCounter } from './componets/UseMemoHook.jsx/MemoCounter';
+//import { ReducerCounter } from './componets/ReducerHook/ReducerWithObject';
 //import { ReducerCounter } from './componets/ReducerHook/ReducerCounter';
 //import { Parent } from './componets/ContextApi/Parent';
 //import { Parent } from './componets/UseContext/Parent';
@@ -27,7 +28,8 @@ function App() {
    {/* <Parent/> */}
    {/* <ReducerCounter/> */}
    {/* <UseReducer/> */}
-   <ReducerCounter/>
+   {/* <ReducerCounter/> */}
+   <MemoCounter/>
   </div>
   );
 }
