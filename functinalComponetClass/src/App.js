@@ -5,6 +5,7 @@ import Contact from './componets/Router/Contact';
 import Home from './componets/Router/Home';
 import { Route, Routes } from "react-router-dom";
 import Header from './componets/Router/Header';
+import Content from './componets/Router/Content';
 //import { MemoCounter } from './componets/UseMemoHook.jsx/MemoCounter';
 //import { ReducerCounter } from './componets/ReducerHook/ReducerWithObject';
 //import { ReducerCounter } from './componets/ReducerHook/ReducerCounter';
@@ -35,11 +36,13 @@ function App() {
       {/* <UseReducer/> */}
       {/* <ReducerCounter/> */}
       {/* <MemoCounter/> */}
-      <Header/>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Content path="/about/:id" element={<Content />} />
+        <Route path="/contact" element={<Contact />} />
+
       </Routes>
     </div>
   );
