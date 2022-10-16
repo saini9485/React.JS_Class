@@ -1,11 +1,14 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
-
+ import React from 'react'
+ import { useState, useEffect } from 'react'
 export  function Counter() {
+   const [count, setCount] = useState(0)
   useEffect(() => {
-    
+    document.title = `You clicked ${count} times`; 
+   if(count>10){
+    setCount(count-1)
+   }
   });
-  const [count, setCount] = useState(0)
+ 
   return (
     <div>
      <h1>CounterAssignment</h1> 
@@ -16,3 +19,5 @@ export  function Counter() {
       </div>
   )
 }
+
+
