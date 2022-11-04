@@ -17,8 +17,8 @@
 // const Decreament = ()=>{
 //   setCount(count-1)
 // }
-// const {handleClick = ()=>{
-//   (btn)? increament():Decreament()
+// const handleClick = ()=>{
+//   (btn)? (increament()):(Decreament())
 // }
 
 //   return (
@@ -38,7 +38,7 @@ export  function Counter() {
   let [count, setCount] = useState(0);
   let [state, setState] = useState(true);
   let incrementCounter = () => setCount(count + 1);
-  let decrementCounter = () => setCount(count - 1);
+  let decrementCounter = () => setCount(count - 2);
   
   let handleCount = () => {
     if (state === true) {
@@ -48,7 +48,7 @@ export  function Counter() {
       if (count === 10) {
         decrementCounter();
         setState(false);
-        document.querySelector("button").innerHTML = "decrement";
+        // document.querySelector("button").innerHTML = "decrement";
       }
     }
     if (state === false) {
@@ -58,19 +58,24 @@ export  function Counter() {
       if (count === 0) {
         incrementCounter();
         setState(true);
-        document.querySelector("button").innerHTML = "Increment";
+        // document.querySelector("button").innerHTML = "Increment";
       }
     }
   };
+  
+ 
+
+
   return (
     <div className="btn">
+      {/* {date.currentDateTime} */}
       <h1>{count}</h1>
       <button
         onClick={() => {
           handleCount();
         }}
       >
-        Increment
+        {state ? 'Increment' : 'Decreament'}
       </button>
       <button
         className="name"
