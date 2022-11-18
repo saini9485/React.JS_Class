@@ -6,7 +6,7 @@ export class ErrorBoundary extends Component {
   render() {
     return (
       <div>
-        <p> ErrorBoundary</p>
+        <h1> ErrorBoundary</h1>
         <Dummy country="India"/>
         <Dummy country="USA" />
         <Dummy country="Rassia"/>
